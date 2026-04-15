@@ -242,7 +242,7 @@ namespace BiometricAuth.Enrollment
                 m2 += delta * (value - mean);
             }
 
-            private static float ComputeSigma(float accumulatedM2)
+            private float ComputeSigma(float accumulatedM2)
             {
                 if (accumulatedM2 <= 0f)
                 {
